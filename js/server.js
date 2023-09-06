@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended: true}))
 app.post('/usuarios', (req, resp)=>{
     console.log(req.body)
-    resp.send('<h3>:)</h3>')
+    resp.send('<h3>Enviado</h3>')
 })
 
 app.listen(3003)
